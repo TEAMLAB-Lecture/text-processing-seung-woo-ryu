@@ -1,4 +1,4 @@
-#######################
+#####################
 # Test Processing I   #
 #######################
 
@@ -58,5 +58,9 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    return input_string.replace("a","").replace("e","").replace("i","").replace("o","").replace("u","")
+    ans = ""
+    for ch in input_string:
+        if ch not in "aeiouAEIOU":
+            ans = ans + ch
+    return ans
 
