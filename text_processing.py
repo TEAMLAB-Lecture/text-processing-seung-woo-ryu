@@ -59,4 +59,4 @@ def no_vowels(input_string):
             ''W lv Pythn!'
     """
     table = str.maketrans('aeiou','     ')
-    return input_string.translate(table)
+    return ''.join(list((map(input_string.split(),translate(table)))))
